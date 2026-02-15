@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36518.9 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActorRepositoryLib2", "ActorRepositoryLib2.csproj", "{BCF97CDF-2492-42A5-A93B-5A35C80A2339}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActorsRepositoryTests", "..\TestProject1\ActorsRepositoryTests.csproj", "{FE41BDD2-539D-4EC5-98DD-5A36803BF9FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BCF97CDF-2492-42A5-A93B-5A35C80A2339}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCF97CDF-2492-42A5-A93B-5A35C80A2339}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCF97CDF-2492-42A5-A93B-5A35C80A2339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE41BDD2-539D-4EC5-98DD-5A36803BF9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE41BDD2-539D-4EC5-98DD-5A36803BF9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE41BDD2-539D-4EC5-98DD-5A36803BF9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE41BDD2-539D-4EC5-98DD-5A36803BF9FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
