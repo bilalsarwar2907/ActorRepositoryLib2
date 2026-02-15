@@ -16,6 +16,36 @@ namespace ActorRepositoryLib2.Repositories
             return _actor;
         }
 
+        public List<Actor>  Get(int? birthYearBefore)
+        {
+            var result = _actor;
+            if (birthYearBefore.HasValue)
+            {
+                result = result
+                    .Where(a => a.BirthYear < birthYearBefore.Value)
+                    .ToList();
+            }
+            return result;
+
+
+        }
+        public List<Actor> Get(int? birthYearBefore, int? birthYearAfter)
+        {
+            var result = _actor.AsEnumerable();
+
+            if (birthYearBefore.HasValue)
+            {
+                result = result.Where(a => a.BirthYear < birthYearBefore.Value);
+            }
+
+            if (birthYearAfter.HasValue)
+            {
+                result = result.Where(a => a.BirthYear > birthYearAfter.Value);
+            }
+
+            return result.ToList();
+        }
+
         public Actor? GetById(int id)
         {
             foreach (var actor in _actor)
